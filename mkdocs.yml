@@ -1,0 +1,21 @@
+site_name: Tomochain privacy protocol documentation
+nav:
+    - Home: index.md
+    - Terms: terms.md
+    - Protocol: protocol.md
+    - Libraries: libraries.md
+    - Roadmap: roadmap.md
+theme: readthedocs
+markdown_extensions:
+    - toc:
+        baselevel: 1
+        permalink: false
+    - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_div_format
+extra_css:
+  - css/styles.css
+extra_javascript:
+  - js/mermaid.min.js
